@@ -53,9 +53,9 @@ def predict_and_visualize(img):
     _p = give_color_to_seg_img(np.argmax(pred[0], axis=-1))
     predimg = cv2.addWeighted(img_resized / 255, 0.5, _p, 0.5, 0)
 
-    true_labels = [0, 1, 0,1]
+    true_labels = [0, 1, 0, 1]
 
-    predicted_labels = [0, 1, 1, 1]
+    predicted_labels = [0, 0, 1, 1]
 
     # Calculate accuracy
     accuracy = accuracy_score(true_labels, predicted_labels)
