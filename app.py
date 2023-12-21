@@ -39,7 +39,7 @@ input_shape = (256, 256)
 # Function to perform prediction, visualization, and return accuracy
 def predict_and_visualize(img):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    img_resized = cv2.resize(img, input_shape)  e
+    img_resized = cv2.resize(img, input_shape)
     img_for_pred = np.expand_dims(img_resized, axis=0)
 
     # Time before prediction
