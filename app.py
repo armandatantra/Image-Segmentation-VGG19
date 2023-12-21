@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 import gdown
 
 # a file
-url = "https://drive.google.com/uc?id=1lxZ62VMo3FiURXtQ8OqiS7uLsU0zrQ"
+url = "https://drive.google.com/uc?id=1V4SHbFC5PV5myXW1UPEu_bQOWGKh2pbM"
 output = "VGG19_BAIK.h5"
 gdown.download(url, output, quiet=False)
 
