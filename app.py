@@ -55,7 +55,7 @@ def predict_and_visualize(img):
 
     true_labels = [0, 1, 0, 1]
 
-    predicted_labels = [0, 0, 1, 1]
+    predicted_labels= [i % 13 for i in range(len(true_labels))]
 
     # Calculate accuracy
     accuracy = accuracy_score(true_labels, predicted_labels)
